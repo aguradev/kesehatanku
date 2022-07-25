@@ -56,6 +56,11 @@ html,body{
     margin-bottom: 1.8rem;
 }
 
+.hero .paragraf{
+   color: var(--dark-blue);
+   font-weight: 600;
+}
+
 .tentang-new-normal,
 .tips-new-normal, .why-vaksin{
     padding: 6rem 0;
