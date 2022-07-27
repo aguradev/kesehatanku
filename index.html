@@ -35,13 +35,38 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">New Normal</a>
+                    <a class="nav-link" aria-current="page" href="#newnormal">New Normal</a>
                 </div>
                 <div class="navbar-nav">
-                    <a href="#vaksin" class="nav-link" aria-current="page" href="#">Vaksin</a>
+                    <a href="#vaksin" class="nav-link" aria-current="page" href="#vaccine">Vaksin</a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">Daftar</a>
+                    <a class="btn-navbar" aria-current="page" href="#daftar-vaccine">Daftar Vaksin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-fixed navbar-expand-sm navbar-light bg-light py-2" id="nav-fixed">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img src="/assets/logo.png" alt=""
+                    class="d-inline-block align-text-top logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
+                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#newnormal">New Normal</a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="#vaksin" class="nav-link" aria-current="page" href="#vaccine">Vaksin</a>
+                </div>
+                <div class="navbar-nav">
+                    <a class="btn-navbar" aria-current="page" href="#daftar-vaccine">Daftar Vaksin</a>
                 </div>
             </div>
         </div>
@@ -100,7 +125,7 @@
 
     </section>
 
-    <section class="tips-new-normal">
+    <section class="tips-new-normal" id="newnormal">
 
         <div class="container">
 
@@ -149,7 +174,7 @@
 
     </section>
 
-    <section class="vaksin bg-light">
+    <section class="vaksin bg-light" id="vaccine">
         <div class="container position-relative">
 
             <div class="header-content text-center text-white">
@@ -310,6 +335,20 @@
 
     </section>
 
+    <section class="cta-vaksin" id="daftar-vaccine">
+
+        <div class="container">
+
+            <div class="header-content">
+                <h6 class="sub-title">Sehat demi keselamatan bersama</h6>
+                <h1 class="title-section">Ayo Daftar Vaksin Sekarang</h1>
+                <a href="#" class="btn-vaccine">Get Vaccine Now</a>
+            </div>
+
+        </div>
+
+    </section>
+
 
     <footer class="footer">
 
@@ -327,11 +366,11 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <nav class="nav navbar-footer justify-content-lg-end">
+                    <nav class="nav navbar-footer justify-content-lg-end align-items-center">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                         <a class="nav-link" href="#">New Normal</a>
                         <a class="nav-link" href="#">Vaksin</a>
-                        <a class="nav-link" href="#">Daftar</a>
+                        <a class="btn-navbar" href="#">Daftar Vaccine</a>
                     </nav>
                 </div>
 
@@ -345,6 +384,7 @@
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/slider.js"></script>
+    <script src="/js/nav-scroll.js"></script>
 </body>
 
 </html>
