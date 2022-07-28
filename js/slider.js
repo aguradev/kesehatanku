@@ -1,11 +1,21 @@
 let sliderVaksin = new Swiper(".vaksin-slider", {
-  slidesPerView: 3,
   spaceBetween: 20,
-  slidesPerGroup: 3,
-  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
   },
   navigation: {
     nextEl: ".swiper-button-next",

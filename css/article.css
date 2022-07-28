@@ -1,0 +1,105 @@
+@import url("/css/style.css");
+
+body{
+    background-color: var(--main-blue);
+}
+
+.jumbotron{
+    padding: 8rem 0;
+    margin-bottom: 2rem;
+}
+
+.jumbotron h1{
+    font-weight: 600;
+    color: #fff;
+}
+
+.jumbotron .sub-jumbotron{
+    font-weight: 600;
+    font-weight: .8rem;
+}
+
+.article-content {
+    padding: 0 15%;
+    padding-bottom: 10%;
+}
+
+.article-content p{
+    line-height: 36px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 2.2rem;
+}
+
+.article-content p:first-child::first-letter{
+    font-size: 5rem;
+}
+
+.article-content .list-content{
+    border-top: 1px solid var(--dark-blue);
+    border-bottom: 1px solid var(--dark-blue);
+    padding: 3rem 0;
+    padding-bottom: 1rem !important;
+}
+
+.article-content .vaccine-content .title-content{
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.article-content .vaccine-content{
+    box-shadow: 8px 10px rgb(0, 0, 0, .5);
+}
+
+.cta-vaksin .container{
+    box-shadow: 0 -20px 50px rgb(0, 0, 0, .2);
+}
+
+.article-content .header-paragraf{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.images-article{
+    margin-bottom: 5rem;
+}
+
+.images-article .img-thumb{
+    height: 600px !important;
+    border-radius: 8px;
+}
+
+.vaccine-content .title-content{
+    text-transform: capitalize;
+}
+
+.vaccine-content .list-group{ 
+    list-style: circle;
+    margin-top: 1.2rem;
+    margin-left: 18px;
+}
+
+.vaccine-content .list-group li{
+    font-size: .85rem;
+    margin-bottom: .75rem;
+    font-weight: 500;
+}
+
+@media(max-width:600px) {
+
+    .jumbotron{
+        padding: 10% 5%;
+        margin-bottom: 2rem;
+    }
+
+    .article-content {
+        padding: 0 5%;
+        padding-bottom: 10%;
+    }
+
+    .article-content p{
+        font-size: .95rem;
+    }
+
+}   

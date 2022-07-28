@@ -374,6 +374,7 @@ section p{
 .cta-vaksin{
     position: relative;
     margin-bottom: -100px;
+    padding: 0 5%;
 }
 
 .cta-vaksin .header-content{
@@ -471,6 +472,17 @@ section p{
 
     .navbar-footer a{
         margin-left: 0;
+    }
+
+    .swiper-button-next{
+        display: none !important;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+
+    .swiper{
+        padding: 0 30px !important;
     }
 
 }
