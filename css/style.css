@@ -2,8 +2,20 @@
 
 :root{
     --main-blue: #9DD8F8;
+    --hover-blue: #59749f;
     --dark-blue: #0E185F;
     --footer-color: #20262E;
+}
+
+.theme-main{
+    background-color: var(--main-blue);
+}
+
+.theme-registrations{
+    background-image: url("/assets/registration-bg.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -24,6 +36,7 @@ html,body{
     border-radius: 8px;
     transition: .3s all;
     font-weight: 600;
+    max-width: fit-content;
 }
 
 .navbar-fixed .btn-navbar:hover{
@@ -444,9 +457,152 @@ section p{
     width: 60px;
 }
 
+.card-registration-section{
+    padding: 0 6.5rem;
+}
+
+.card-registration{
+    margin: 5rem 0;
+    padding: 2rem 1.4rem;
+    
+}
+
+.card-registration .card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+
+.card-registration .card-subtitle{
+    font-weight: 400;
+    font-size: .85rem;
+    color: #b9ac18;
+}
+
+.card-subtitle i{
+    margin-right: .5rem;
+}
+
+.card-registration form{
+    margin-top: 2rem;
+}
+
+.card-registration .form-group{
+    display: flex;
+    flex-direction: column;
+    row-gap:.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.card-registration .form-group:last-child{
+    margin-bottom: 0;
+}
+
+.card-registration .form-group label{
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.card-registration .form-group .form-control{
+    font-size: .8rem;
+    padding: .65rem 1rem;
+    border: 2px solid var(--main-blue);
+}
+
+.form-control:focus{
+    box-shadow: 0px 0px 10px var(--main-blue);
+}
+
+.form-tab{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.form-tab.active{
+    max-height: fit-content;
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn-next,
+.btn-prev,
+.btn-submit{
+    color: #161616;
+    padding: .6rem 2rem !important;
+    font-weight: bold;
+    border:none;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 2rem;
+    transition: .5s;
+}
+
+.btn-next{
+    background-color: var(--main-blue);
+    margin-left: auto;
+    display: block;
+}
+
+.btn-next:hover,
+.btn-submit:hover{
+    background-color: var(--hover-blue);
+}
+
+.btn-submit{
+    background-color: var(--main-blue);
+    margin-left: auto;
+    display: block;
+}
+
+.btn-prev{
+    color: #161616;
+    font-weight: 500;
+}
+
+.btn-prev:hover{
+    color: #fff !important;
+    background-color: #aaa !important;
+}
+
+.back-to-home{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.back-to-home .btn-back-to-home{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--main-blue);
+    padding: .8rem 1rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    font-size: .9rem;
+    transition: .5s;
+}
+
+.btn-back-to-home:hover{
+    background-color: var(--hover-blue);
+}
+
+.btn-back-to-home i{
+    vertical-align: middle;
+    margin-right: .4rem;
+}
+
 @media(max-width:768px) {
+    
     .hero{
-        background-position: center;
+        background-color: var(--main-blue) !important;
+        background-position-y: 120px !important;
+    }
+
+    .hero .paragraf{
+        font-size: .8rem;
     }
 
     .card-information{
@@ -484,5 +640,26 @@ section p{
     .swiper{
         padding: 0 30px !important;
     }
+
+    .theme-registrations{
+        background-color: var(--main-blue);
+        background-image: none;
+    }
+
+    .card-registration-section{
+        padding: 0 1rem;
+    }
+
+    .back-to-home{
+        position: fixed;
+        left: 25%;
+        top: 20px;
+        width: 100%;
+    }
+
+    .btn-back-to-home{
+        box-shadow: 0px 0 20px rgb(0 0 0 / 40%) !important;
+    }
+    
 
 }
