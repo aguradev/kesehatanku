@@ -36,7 +36,6 @@ html,body{
     border-radius: 8px;
     transition: .3s all;
     font-weight: 600;
-    max-width: fit-content;
 }
 
 .navbar-fixed .btn-navbar:hover{
@@ -661,5 +660,8 @@ section p{
         box-shadow: 0px 0 20px rgb(0 0 0 / 40%) !important;
     }
     
+    .btn-navbar{
+        max-width: fit-content;
+    }
 
 }
